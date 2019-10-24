@@ -2,14 +2,22 @@ console.log('this is loaded');
 
 //Spotify Node Package
 const Spotify = require('node-spotify-api')
-exports.spotify = {
-  id: process.env.SPOTIFY_ID,
-  secret: process.env.SPOTIFY_SECRET
-};
 
-const axios = require('axios')
-const db = require('db')
-const moment = require('moment')
+const spotify = new Spotify ({
+  id:'e24c9bf78167492eaee3843fe4174bd9',
+  secret: 'df57dded0909408a8384bf81c03ecb2e'
+})
+spotify
+  .search({ type: 'artist', query: 'Michael Jackson', limit: 1 })
+  .then(function(response) {
+    console.log(response.artists.items);
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
 
 
-module.exports
+// const moment = require('moment')
+
+
+// module.exports
