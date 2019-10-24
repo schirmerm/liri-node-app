@@ -8,9 +8,18 @@ const spotify = new Spotify ({
   secret: 'df57dded0909408a8384bf81c03ecb2e'
 })
 spotify
-  .search({ type: 'artist', query: 'Michael Jackson', limit: 1 })
-  .then(function(response) {
-    console.log(response.artists.items);
+  .search({ type: 'track', query: `beat it`, limit: 3 })
+  .then(({tracks}) => {
+    for (let i = 0; i < 3; i++) {
+      //Artists
+    console.log(tracks.items[i].artists[0].name);
+      //Name of the song
+    console.log(tracks.items[i].name)
+    // Preview Url
+    console.log(tracks.items[i].preview_url)
+    // Album Name
+    console.log(tracks.items[i].album.name)
+    }
   })
   .catch(function(err) {
     console.log(err);

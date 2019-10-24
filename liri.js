@@ -1,3 +1,4 @@
+const fs = require('fs')
 require("dotenv").config();
 const axios = require('axios')
 // const db = require('db')
@@ -8,7 +9,6 @@ const keys = require("./keys.js");
 // const spotify = new Spotify(keys.spotify)
 
 //Bands in Town
-const input = process.argv[3]
 
 // axios.get(`https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp&date=upcoming`)
 //   .then(data => {
@@ -24,3 +24,21 @@ axios.get(`http://www.omdbapi.com/?t=${input}&apikey=trilogy`)
   })
   .catch(e => console.log(e))
 
+// Switch statement to create the commands
+let command = process.argvb[2]
+const input = process.argv[3]
+
+// switch(command) {
+//   case `concert-this`:
+//     break;
+  
+//   case `spotify-this-song`:
+//     break;
+
+//   case `movie-this`:
+//     break;
+
+//   case `do-what-it-says`:
+//     break;
+
+// }
