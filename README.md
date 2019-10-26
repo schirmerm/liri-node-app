@@ -10,7 +10,7 @@ This command allows you to search up your favorite artist or band and see when t
 
 ![concert-input](./images/concert-this-input.png)
 
-When you press enterenter you should get this result
+When you press enter you should get this result
 
 ![concert-result](./images/concert-this-results.png)
 
@@ -40,3 +40,5 @@ The last command is if you don't have any specific movie, artist, or song in min
 and your result will be this
 
 ![do](./images/do-result.png)
+
+### If you need help refer to the images for instructions on how to correctly type your input into the command line
