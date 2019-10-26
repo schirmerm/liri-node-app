@@ -12,7 +12,7 @@ This command allows you to search up your favorite artist or band and see when t
 
 When you press enterenter you should get this result
 
-![concert-input](./images/concert-this-result.png)
+![concert-result](./images/concert-this-results.png)
 
 ### 2) spotify-this-song
 This command allows you to search any song you like and through the spotify API it will bring up the artist, name of the song, a preview url of the song, and the name of the album its from. The input for this command should look like this...
