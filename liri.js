@@ -14,8 +14,8 @@ let spotify = new Spotify(keys.spotify);
 // Switch statement to create the commands
 let command = process.argv[2]
 let input = process.argv.slice(3).join(' ')
-const commands = _ => {
 
+const commands = _ => {
 
 switch(command) {
 
