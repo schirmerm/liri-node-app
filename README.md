@@ -10,7 +10,7 @@ To get Liri to work I had to utilize the 3 APIs that are required for this assig
 
 The first thing I did was download Axios so that I could grab the bands API and the OMDB API, as for the spotify API it is actually a node package itself so I downloaded that as well. First to install these node packages was I had to 
 1. NPM init -y
-2. NPM i(install) **>Node Package**
+2. NPM i(install) **"Node Package"**
 3. Require the node packages so that you are able to utilize them.
 Besides Axios and spotify I also downloaded moment and .env. After downloading the necessary node packages and required them to be able to utilize them. For the spotify API you have to create a ID and Secret from spotify so I created a .env file and a .gitignore file so that it was hidden and nobody else could use my ID and Secret. If you were to download the code you would have to provide your own. I created functions for each API so that I pulled specific data from each one. Once I had each API working the way I wanted I threw them into a switch statement, which is based off the command you give. Each of the commands are listed below, but when you type in a specific command you will have to type in an input following the command and it will give you the information. 
 
